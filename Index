@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MSS Tax Settings Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    label {
+      display: block;
+      margin: 8px 0;
+    }
+    .button {
+      background: #0b3d91;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="card">
+    <h2>Tax Basics</h2>
+    <label><input type="checkbox"> Sales tax required</label>
+    <label>Tax Rate (%): <input type="number" step="0.01"></label>
+  </div>
+
+  <div class="card">
+    <h2>Taxable Categories</h2>
+    <strong>Rentals</strong>
+    <label><input type="checkbox"> Court Rentals</label>
+    <label><input type="checkbox"> Field Rentals</label>
+    <label><input type="checkbox"> Training Space</label>
+
+    <strong>Programs</strong>
+    <label><input type="checkbox"> Camps</label>
+    <label><input type="checkbox"> Leagues</label>
+    <label><input type="checkbox"> Tournaments</label>
+
+    <strong>Other</strong>
+    <label><input type="checkbox"> Memberships</label>
+    <label><input type="checkbox"> Parties</label>
+    <label><input type="checkbox"> Day Passes</label>
+  </div>
+
+  <div class="card">
+    <h2>Display Settings</h2>
+    <label><input type="checkbox"> Show tax as separate line item</label>
+    <label><input type="checkbox"> Apply automatically</label>
+  </div>
+
+  <div class="card">
+    <h2>Acknowledgment</h2>
+    <p style="font-size: 14px;">
+      You are responsible for determining tax rates and compliance. MSS does not provide tax advice.
+    </p>
+    <label><input type="checkbox"> I agree</label>
+  </div>
+
+  <button class="button">Save & Continue</button>
+
+</div>
+</body>
+</html>
